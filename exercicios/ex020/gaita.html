@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaita’s Lanches | Premium Burger</title>
+    <!-- Fonte Inter (Moderna) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+    <!-- OVERLAY (Fundo escuro quando abre o carrinho) -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                GAITA'S<span>.</span>LANCHES
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#menu" class="nav-link">Cardápio</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <button class="cart-trigger" id="cart-btn">
+                <span>Carrinho</span>
+                <span class="badge" style="background: white; color: black;" id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SIDEBAR CARRINHO -->
+    <aside class="cart-sidebar" id="sidebar">
+        <div class="cart-header">
+            <h2>Seu Pedido</h2>
+            <button class="close-cart" id="close-cart">✕</button>
+        </div>
+        
+        <div class="cart-items" id="cart-items-container">
+            <!-- Itens inseridos via JS -->
+            <p style="text-align: center; margin-top: 2rem; color: #666;">Carregando...</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span>R$ <span id="cart-total-value">0,00</span></span>
+            </div>
+            <button class="btn-checkout" onclick="window.checkout()">
+                Finalizar no WhatsApp
+            </button>
+        </div>
+    </aside>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero-section" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1583011482205-844cac1d6337?w=1600&q=80'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="hero-text">
+                <span class="badge" style="margin-bottom: 1rem;">O MELHOR DA CIDADE</span>
+                <h1>MATE SUA FOME COM ESTILO.</h1>
+                <p>Hambúrgueres artesanais feitos com blend de carnes nobres, queijos selecionados e muito sabor.</p>
+                <a href="#menu" class="btn-lg">Ver Cardápio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nosso Cardápio</h2>
+                <p style="color: var(--text-muted);">Escolha sua categoria favorita</p>
+            </div>
+
+            <!-- Abas -->
+            <div class="tabs">
+                <button class="tab-btn active" data-cat="burgers">Burgers</button>
+                <button class="tab-btn" data-cat="sides">Acompanhamentos</button>
+                <button class="tab-btn" data-cat="drinks">Bebidas</button>
+            </div>
+
+            <!-- Grid de Produtos (Preenchido via JS) -->
+            <div class="products-grid" id="menu-grid">
+                <!-- JS vai colocar os cards aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" style="background-color: var(--bg-card); padding: 5rem 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800" alt="Nossa Cozinha" style="border-radius: var(--radius);">
+                </div>
+                <div>
+                    <span style="color: var(--color-primary); font-weight: bold; letter-spacing: 1px;">NOSSA HISTÓRIA</span>
+                    <h2 style="font-size: 2.5rem; margin: 1rem 0;">Feito com Paixão desde 2015</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                        O que começou como uma brincadeira de fim de semana na garagem de casa, se tornou a hamburgueria mais amada da região.
+                    </p>
+                    <ul style="list-style: none; color: var(--text-muted);">
+                        <li style="margin-bottom: 10px;">✓ Carne moída diariamente</li>
+                        <li style="margin-bottom: 10px;">✓ Legumes frescos de produtores locais</li>
+                        <li>✓ Maionese caseira com receita secreta</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="logo">GAITA'S<span>.</span></h3>
+                    <p>O verdadeiro sabor do hambúrguer artesanal.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <p>Rua das Flores, 123</p>
+                    <p>(11) 99999-9999</p>
+                    <p>contato@gaitas.com</p>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 2rem; border-top: 1px solid #333; font-size: 0.9rem;">
+                &copy; 2025 Gaita's Lanches. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <!-- 
+         #      =  ID
+         .      =  CLASS
+         :      =  PSEUDO-CLASS
+         ::     =  PSEUDO-ELEMENT
+         >      =  CLILDREN
+    -->
+
+    <style>
+        body {
+            /* mudando familia de fonte e cor de fundo */
+            font-family: 'Courier New', Courier, monospace;
+            background: maroon;
+        }
+
+        h1 {
+            /* cor h1 */
+            color: aliceblue;
+        }
+
+        a {
+            /* mudando txt de cor, tirando o underline padrão e aumentando a fote*/
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: 900;
+        }
+
+        ul {
+            /* tirando os pontinhos de lista que fica nas tags ul e li, e 
+            tbm tira os espaçamentos */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a:visited {
+            /* mudar a cor dos txt de links visitados */
+            color: aqua;
+
+        }
+
+        a:hover {
+            /* coloca underline ao o mouse no txt */
+            text-decoration: underline;
+        }
+
+        a:active {
+            /* quando aperta o nome fica rosa*/
+            color: hotpink;
+        }
+
+        a::after { /* aqui eu coloquei a informarção que é um link com a pseudoclasse
+          after que significa dps e nao tem nd no html apenas no css pseudoclasse
+          pela tag content, txt decoretion none pra tirar decoções, font weight lighter
+          para ficar com a letra fina, color pra cor. OBS nao teve comando link apenas coloquei 'LINk'
+          escrito. */  
+            content: ' /link';
+            text-decoration: none;
+            font-weight: lighter;
+            color: beige
+
+        }
+
+        a::before { /* msm coisa de cima so que before é antes. */
+            content: '§ ';
+            text-decoration: none;
+            color: gold;
+        }
+
+        .esp {
+            background: rgba(255, 255, 0, 0.508);
+            height: auto;
+            width: 57%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+
+        <h1>Personalizando Links</h1>
+
+        <ul>
+            <li class="esp"><a href="https://youtu.be/r2yMWqNG7rk" alt="SOLO LEVELING" target="_blank" rel="noopener noreferrer">O caçador mais fraco</a></li>
+            <li><a href="https://beta.primerush.gg/beta" alt="JOGO PH" target="_blank" rel="noopener noreferrer">Beta PrimeRush</a></li>
+            <li><a href="https://youtu.be/V2M1Xx50arE" alt="VEIGH" target="_blank" rel="noopener noreferrer">Talvez você prescise de mim</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

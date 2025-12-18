@@ -1,0 +1,23 @@
+min-width: 280px; o mínimo width se a tela for menor que isso → o elemento não encolhe mais, muito usado pra não esmagar layout.
+max-width: 800px; o máximo width se a tela for maior → o elemento para de crescer, essencial pra não virar faixa de aeroporto em monitor grande
+margin: auto;
+
+img {
+width: 100%;
+
+
+
+<picture> 
+  <source media="(max-width: 600px)",   se a tela tiver até 600px → usa a imagem pequena,   se for maior que 600px → usa a imagem normal.
+          srcset="imagens/irina-blok-pq.jpg">,   essa pequena
+  <img src="imagens/irina-blok.jpg">,   essa normal
+</picture>
+
+<picture> = imagem responsiva
+
+media = condição
+
+srcset = imagem alternativa
+
+<img> = fallback obrigatório imagem normal.
+

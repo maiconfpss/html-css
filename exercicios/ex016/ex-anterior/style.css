@@ -1,0 +1,18 @@
+/* ➡️ * { ⬅️ configuracao global css   */
+
+.buton-page {
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    background-color: blue;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+
+head {
+    font-family: "Poppins", sans-serif;
+    background: beige;
+    
+}

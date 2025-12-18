@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+
+    <style>
+        h1 {
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(4, 108, 82);
+            display: flex;  /* centralizar txt h1 no centro */
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10;
+        }
+        a {
+          border-width: 10px;
+          border-style: solid;  
+          border-color: rgb(4, 108, 82);
+          display: block;  /* aqui eu mudei de inline pra box level */
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            width: fit-content;
+            border-style: solid;
+            padding: 5px 10px;
+            background: #40E0D0;
+            border-radius: 50px;
+            margin: auto;
+
+            /*
+            outline-width: 3px;             // versao nao simplificada //
+            outline-style: dashed;
+            outline-color: #30D5C8;
+            border: none;
+            outline-offset: 0.9px; /* espacamento do outline respirar da box */
+
+            outline: 3px dashed #30D5C8; 
+            border: none;
+            outline-offset: 0.9px; /* aqui apeans esses dois ultimos nao deu pra simplificar /*
+
+            /* padding direção */
+            
+            /*padding-top: 10px; /* padding ⬆️ */
+            /*padding-right: 20px; /* padding ➡️ */
+            /*padding-bottom: 10px; /*  padding ⬇️ */
+            /*padding-left: 20px; /*      padding ⬅️ */ 
+
+            /* versão simplificada */
+
+            padding: 10px 20px;  /* shorthand quando simplifica aqui o 10px ta como cima e baixo e 20px como lados */ 
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+      Parégrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>.
+      Vamos ver como tudo isso funciona.
+    </p>
+
+    <h2 class="box-test">teste padding</h2>
+    
+</body>
+</html>

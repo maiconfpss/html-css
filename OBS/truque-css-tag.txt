@@ -1,0 +1,1 @@
+pode pegar duas tags do HTMl ao msm tempo no CSS tipo H1 e coloca virgula pra pegar a outra tag EX= h1, h2 {}

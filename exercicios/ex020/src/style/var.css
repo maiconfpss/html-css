@@ -1,0 +1,19 @@
+/* Variáveis CSS do projeto
+   - Coloque aqui todas as cores reutilizáveis
+   - Use `var(--nome-da-variavel)` em seus estilos
+*/
+
+:root {
+  /* Cor principal (dourado) */
+  --cor-gold-site: #DE9000;
+
+  /* Fundo suave para o body */
+  --cornsilk-site: #FFF8DC;
+
+  /* Cor padrão para textos/ícones escuros */
+  --black-site: #0b0b0b;
+
+  /* Cores adicionais (opcionais) */
+  --accent-red: #BF0019;
+  --muted-gray: #E1E6E1;
+}

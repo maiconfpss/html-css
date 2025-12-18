@@ -1,0 +1,8 @@
+Como no desafio d010 já tinha o txt completo o Guanabara colou ele inteiro no dentro de <main> <article> ai dps do vai envelopando 
+pra por as tags no HTML.
+
+já  eu fiz ao contrario peguei txt por txt e fui pondo tags nem um ta errado so vai de pessoa msm, e tbm eu não sabia dessa aprendi agora 😁.
+
+Acertei como usa o icon da pagina/favicon ✅
+
+DPS de quebrar muito a cabeça tbm acertei o <aside> e tbm com ajuda de ia ✅ 

@@ -1,0 +1,25 @@
+ID so pode pegar um por tag é tipo o CPF único
+
+já a CLASS é ilimitada pode usar varias que no final vai virar um grupo
+
+pra usar = 
+em HTML é ID em CSS é #
+em HTML é CLASS em CSS é .
+
+ID é um mimadinho que não entrosa so serve bem pra JS e ancora de paginas tipo por como link na navbar pra levar a tal parte da pagina
+fora isso pode usar CLASS ante o talo e se precisar dps muda a CLASS pro ID que for usar tipo pra JS ou ancora.
+
+não dar nomes tipo cor pras CLASS tipo rosa ai vai por a cor rosa na CLASS e fica .ROSA ROSA mei sem nexus então usar mais oque é 
+a tag oque ele indica tipo .HEADER .MAIN...
+
+Colocar apenas o nome e um símbolo que se usa tipo .MAIN... pra CLASS no CSS,  #MAIN... pra ID no CSS.
+
+E pode colocar uma CLASS já feita pra fazer algo tipo tag .MAIN... que tenha cor e colocar a tag <SPAN> por exemplo dentro de uma texto com uma palavra
+dentro essa palavra dentro vai erdar a cor da .MAIN ex <SPAN CLASS="MAIN">Ola</SPAN> o nome dentro ficaria rosa.
+
+O HTML é corpo, CLASS no CSS roupa e a roupa nao prescisa do corpo de tal pessoa pra ser feita e so fazer e vender pra qualquer um vestir
+então pode fazer a CLASS no CSS sem precisar fazer no HTML e usar pro design.
+
+ID é tipo INLINE é proza ruim mais e sobrepõem os outros que são melhores.
+
+E ID poder ter apenas um por pagina é o certo.

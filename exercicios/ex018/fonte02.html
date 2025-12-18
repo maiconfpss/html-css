@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+
+    <style>
+         
+         /* É legal criar uma pagina tipo fonts pra maior organização e ai tem que colocar o caminho com a pasta junto 
+         se for em style externo ../ pra encotrar a pastar se nao for so control espace ou nomepasta/ ... */ 
+        @font-face {
+            font-family: kl; /* pode por qualquer nome pra chamar a fonte ex coloquei KL*/ 
+            src: url(KINKEE__.TTF) format(truetype); /* e pode color mais formatos de fontes
+            pra caso algum dispositivo nao reconheça ex pra colocar mais apenas colocar mais 
+            , url(font externa) format (o outro tipo da font) */
+            /*
+            font-weight: bolder;
+            font-style: italic;    OBS nessa fonte nao tem porem pode colocar algumas configuracoes aqui pra ficar 
+            como padrao */
+
+            /* tipos de formats
+            OpenType (.otf)
+            TrueType (.ttf)
+            Embedded OpenType (.eot)
+            Scalable vector Graphics (.svg)
+            TrueType-aat (Apple Advanced Typography) (.ttf)
+            */
+        }
+        head {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'kl', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Titulo</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi consectetur assumenda consequatur, eius est
+        sed cum. Velit incidunt quidem quaerat maiores corporis rerum quam hic culpa. Deleniti enim nostrum fuga!
+    </p>
+
+</body>
+
+</html>

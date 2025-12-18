@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>abrir img em dispositivos diferentes ou mexer no tamanho do navegador</p>
+
+    <picture>
+        <!--
+        Quando a tela tiver ATÉ 750px de largura (celular),
+        use a imagem pequena. Ela é leve e suficiente.
+    -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+
+        <!--
+        Quando a tela tiver ATÉ 1050px de largura (tablet ou notebook leve),
+        use a imagem média. Mais qualidade sem pesar demais.
+    -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+        <!--
+        Se a tela for maior que 1050px, ou se o navegador ignorar os <source>,
+        carregue a imagem grande. Essa é a versão mais nítida.
+    -->
+        <img src="imagens/foto-g.png" alt="imagem redimensionável">
+    </picture>
+
+    <h1>Produzindo Audio</h1>
+
+    <p>
+    <ul>
+        <li>Daily</li>
+        <audio src="midia/daily.mp3" controls> <!-- controls pra aparecer os controles de audio no navegador -->
+    </ul>
+    </audio>
+
+    </p>
+
+    <h2>Outra Alternativa</h2>
+    <audio preload="metadata" loop> <!-- loop pra repetir infinitamente o audio e autoplay pra dar auto play porem so ta funcionando quando coloco o codigo e nao ao atualizar o site ou entrar -->
+        <source src="midia/daily.mp3" type="audio/mpeg">
+        <source src="midia/daily.ogg" type="audio/ogg">
+        <source src="midia/daily.wav" type="audio/wav"> <!-- wav é o mais pesado-->
+        <p>Seu navegador não suporta o elemento de áudio.</p>
+     <!-- preload pra carregar algo junto com site tipo abrir junto -->
+    </audio>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Externo</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>  /* estilo interno */
+        .interno { 
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid snow;
+            background-color: rgb(0, 174, 255);
+            font-weight: bold;
+            color:snow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Capitulo 1</h1>
+
+    <h2>Capitulo 1.1</h2>
+
+    <p><Strong>Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Hic placeat blanditiis
+            inventore quasi accusantium at
+            ad alias soluta maiores minima quisquam dolorum nihil, illo esse praesentium necessitatibus nam assumenda?
+            Ipsam.
+    </p>
+
+    <h2>Capitulo 1.2</h2>
+
+    <p> Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Hic placeat blanditiis inventore quasi accusantium at
+        ad alias soluta maiores minima quisquam dolorum nihil, illo esse praesentium necessitatibus nam assumenda?
+        Ipsam.
+    </p>
+
+    <h1>Capitulo 2 c/inline</h1>
+
+    <h2>Capitulo 2.1</h2>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic placeat
+        blanditiis inventore quasi accusantium at
+        ad alias soluta maiores minima quisquam dolorum nihil, illo esse praesentium necessitatibus nam assumenda?
+        Ipsam.
+    </p>
+    
+    <h2>New page</h2>
+          <!-- estilo inline -->   
+    <div class="btn-page" style="text-align: right;"> <!-- aqui usei inline pra modificar a posição do botão sem o
+        inline ele estaria no centro pq estou usando text-align: center no css externo e tbm estou com uma div
+        pra conectar melhor o botao nas duas paginas -->
+
+        <a href="page2.html">Go to Page 2</a>
+    </div>
+
+    <div class="interno">
+        <p>  <!-- usando estilo interno aqui conectado localmente nesse index na head-->
+            Exemplo de estilo interno
+        </p>
+    </div>
+
+    <p buton-test>
+        botao de test
+        <!--test cor colorzilla-->
+
+    </p>
+    <!-- Obs: pode usar os 3 estilo de boa como fiz nesse exercicio-->
+     <!-- Obs: Inline dentro de uma pagina fica como mais poderoso por estar dentro da tag ele sobrepoem os outros
+      estilos msm os outros estando conectadados na pagina ele sobrepoem por estar dentro da tag-->
+
+</body>
+
+</html>

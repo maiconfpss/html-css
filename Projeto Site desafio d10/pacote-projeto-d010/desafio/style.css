@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf4d378;
+}
+
+header {
+    background: linear-gradient(45deg, #3773fff8, #b237ffaf); 
+}
+
+h1 {
+    font-family: idroid;
+    font-size: 24px;
+    color: #E1E6E1;
+}
+
+#home {
+    height: 7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.menu {
+    background: linear-gradient(45deg, #3773fff8, #b237ffaf);
+    color: rgba (27, 127, 204, 0.883);
+    padding: 0.6rem;
+    justify-content: center;
+    display:flex;
+    gap: 15px;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #E1E6E1;
+    font-size: 13px;
+    padding: 7px;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+
+
+
+}
+
+#home p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 13px;
+    color: #E1E6E1;
+
+}
+
+h2, h3 {
+    font-family: idroid;
+    font-size: 20px;
+    margin: 25px;
+    text-align: center;
+    background: linear-gradient(45deg, #3773fff8, #b237ff4e);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.150);
+
+    
+}
+
+p {
+    line-height: 1.3em;
+    text-align: justify;
+    text-indent: 25px;
+    padding: 20px;
+    color: #0C1618;;
+}
+
+main {
+    background-color: #E1E6E1;
+    min-width: 300px;
+    max-width: 555px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.150);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+main {
+    min-width: 300px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img {
+    max-width: 100%;
+    margin: 15px;
+
+}
+
+main img.small {
+    width: 50%;
+
+}
+
+.image-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+main iframe {
+    max-width: 100%;
+    display: inline-block;
+    margin: 15px;
+}
+
+.video-yt {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #faf4d384;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.150);
+}
+
+#curiosity {
+    background-color: #faf4d384;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.150);
+}
+
+#curiosity h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin: 25px;
+    text-align: center;
+    background: linear-gradient(45deg, #3773fff8, #b237ff69);
+    color: #E1E6E1;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.150);
+}
+
+#curiosity p {
+    text-align: justify;
+    text-indent: 25px;
+    padding: 20px;
+}
+
+.list-android ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+    margin: 20px;
+}
+
+.list-android li {
+    width: 50%;
+    padding: 2px 0;
+}
+
+abbr {
+    text-decoration: none;
+    cursor: help;
+}
+
+.extra-end {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+footer {
+    background: linear-gradient(45deg, #3773fff8, #b237ff74);
+    padding: 15px;
+    text-align: center;
+    color: #E1E6E1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+
+a {
+    text-decoration: none;
+    color: #126a9e;
+}
+
+strong {
+    color: #126a9e;;
+}
+
+a:hover {
+    text-decoration: underline;
+    background: linear-gradient(45deg, #3773fff8, #b237ffaf);
+    border-radius: 15px;
+    
+}
+
+.menu a:hover {
+    background-color: #E1E6E1;
+    color: #0C1618;
+    text-decoration: none;
+
+}
+
+main a::after {
+    content: '🔗';
+}
+
+aside li::before {
+    content: '✔️';
+
+}
+
+span {
+    color: #E1E6E1;
+    font-weight: 600;
+    text-align: right;
+    font-size: 16px;
+
+}
+
+
+
+

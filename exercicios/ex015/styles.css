@@ -1,0 +1,133 @@
+body {
+            background:linear-gradient(90deg, #ff05ff, #00e5ff);
+            /*aqui é como se faz um gradiente*/
+            color: aliceblue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            text-align: justify;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 15px black;
+
+        }
+
+        h1 {
+            color: beige;
+            font-size: 50px;
+            font-family:cursive;
+            background:radial-gradient(circle, #b22020, 75deg, #ff05ff square 80%, #00e5ff 60%,#22ff00 25%);
+            /*aqui o gradiente está em radial com porcentagens e numeros de degrader quandrados*/
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 15px black;
+        }
+
+        h2 {
+            color: beige;
+            font-size: 31px;
+            background-color: rgb(197, 74, 199);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 20px 20px 25px rgb(119, 28, 184);
+            /*aqui o box-shadow está com valores maiores para um efeito mais forte
+            e fiacar mais facil enteder dps*/
+        }
+
+        p {
+            color: lightgray;
+            
+        }
+        .btn-page a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: darkorange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px black;
+           
+        }
+        .btn-page a:hover {
+            background-color: orangered;
+        }
+
+        p[buton-test] {
+            color: beige; /* cor do texto*/
+            background : linear-gradient(45deg, #ec40d8, #00e5ff); /* cor de fundo do botao*/
+            font-size: 20px; /* tamanho da fonte do botao*/
+            font-weight: bold; /* negrito na fonte do botao*/
+            border: 2px solid beige; /* borda ao redor do butao a linha ao redor */
+            border-radius: 50px; /* bordas arredondadas*/
+            padding: 15px; /* espacamentro interno tamanho em altura*/
+            margin: 100px; /* espaçamento externo espaco de um abaixo*/
+            /*box-shadow: 4px 4px 8px black;  sombra ao redor do botao*/
+            text-align: center; /* alinhamento do texto no centro*/
+            width: fit-content; /* largura do botao ajusta ao conteudo*/
+            cursor: pointer; /* cursor muda para mao ao passar por cima*/
+            transition: all 0.5s ease-in-out; /* transicao suave para todas as propriedades*/
+
+
+        }
+
+        p[buton-test]:hover { /* estilo ao passar o mouse*/
+            background-color: #FF8A80; /* cor de fundo ao passar o mouse*/
+            /*box-shadow: 6px 6px 12px black; sombra mais forte ao passar o mouse*/
+            transform: scale(1.1); /* aumenta o tamanho do botao ao passar o mouse*/
+            transition: 0.5s; /* tempo de transicao suave*/
+        }
+
+        p[buton-test]:active { /* estilo ao clicar no botao*/
+            background-color: #FF5252; /* cor de fundo ao clicar*/
+            box-shadow: 2px 2px 6px black; /* sombra reduzida ao clicar*/
+            transform: scale(0.95); /* reduz ligeiramente o tamanho do botao ao clicar*/
+            transition : 0.1s; /* tempo de transicao rapida*/
+        }
+
+        p[buton-test]:focus { /* estilo ao focar no botao*/
+            outline: none; /* remove o contorno padrao ao focar*/
+            box-shadow: 0 0 10px #ec40d8; /* sombra brilhante ao focar*/
+        }
+
+        p[buton-test] {
+            position: relative; /* posicao relativa para o pseudo-elemento*/
+            z-index: 1; /* garante que o botao fique acima de outros elementos*/
+
+        }
+        
+
+        p[buton-test]::before {
+            content: ""; /* conteudo vazio para o pseudo-elemento*/
+            position: absolute; /* posicao absoluta para o pseudo-elemento*/
+            top: -15px; /* ajusta a posicao do botao se necessario*/
+            left: -15px; /* ajusta a posicao do botao se necessario*/
+            right: -15px; /* ajusta a posicao do botao se necessario*/
+            bottom: -15px; /* ajusta a posicao do botao se necessario*/
+            border-radius: 50px; /* bordas arredondadas iguais ao botao*/
+            background: linear-gradient(45deg, #d30303, #9a4dde); /* cor de fundo do botao*/
+            filter: blur(18px); /* efeito de desfoque para brilho*/
+            z-index: -1; /* coloca o pseudo-elemento atras do botao*/
+            opacity: 0,8; /* inicia invisivel*/
+            pointer-events: none; /* evita interferencia com o botao*/
+            
+        }
+
+        
+
+       /*p[buton-test]::before {
+            content: '';  conteudo vazio para o pseudo-elemento
+            position: absolute;  posicao absoluta para o pseudo-elemento
+            top: 0;  posicao superior
+            left: 0;  posicao esquerda
+            width: 100%;  largura total do botao
+            height: 100%;  altura total do botao
+            border-radius: 50px;  bordas arredondadas iguais ao botao
+            box-shadow: 0 0 15px #ec40d8;   sombra brilhante ao redor do botao
+            z-index: -1;  coloca o pseudo-elemento atras do botao
+            opacity: 0;  inicia invisivel
+            transition: opacity 0.5s ease-in-out;  transicao suave para a opacidade */
+        

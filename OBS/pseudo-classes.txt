@@ -1,0 +1,77 @@
+<!--
+  Pseudo-classes em CSS são “estados especiais” de um elemento.
+  Elas permitem estilizar algo baseado em uma condição, como:
+    :hover        -> quando o mouse está em cima
+    :active       -> quando o elemento está sendo clicado
+    :focus        -> quando o elemento está selecionado
+    :visited      -> quando o link já foi visitado
+
+  Outras pseudo-classes úteis (explicado sem frescura):
+    :first-child  -> quando é o PRIMEIRO da lista
+    :last-child   -> quando é o ÚLTIMO da lista
+    :nth-child()  -> escolher pela posição (ex: o 2º, o 5º, etc.)
+    :checked      -> quando o checkbox/radio está marcado
+    :disabled     -> quando o elemento está desativado
+    :valid        -> quando o input passou na validação certinho
+    :invalid      -> quando o input tá com informação errada
+    :required     -> quando o input é obrigatório
+    :empty        -> quando o elemento tá literalmente vazio
+    :not()        -> pega tudo MENOS o que você disser
+-->
+
+-------------------------------------------------------------------------------------------
+
+<!--
+Esse bloco cria um texto que troca quando o mouse passa por cima.
+Dentro dele existem DOIS spans:
+1) O que aparece normalmente (classe "normal")
+2) O texto escondido que só aparece no hover (classe "escondido")
+-->
+
+<p class="troca-texto">
+  <span class="normal">Passa o mouse aqui</span>
+  <span class="escondido">Texto secreto</span>
+</p>
+
+
+
+
+/* 
+.troca-texto = a div/p que controla tudo. 
+Serve para ativar o hover no elemento inteiro.
+*/
+.troca-texto {
+  cursor: pointer;       /* muda o cursor pra mãozinha */
+  position: relative;    /* deixa tudo organizado dentro */
+}
+
+/*
+.normal = texto que aparece normalmente.
+coloquei display inline porque é texto simples.
+*/
+.troca-texto .normal {
+  display: inline;
+}
+
+/*
+.escondido = texto que começa invisível.
+*/
+.troca-texto .escondido {
+  display: none;
+}
+
+/*
+Quando o mouse entra no .troca-texto:
+O normal some...
+*/
+.troca-texto:hover .normal {
+  display: none;
+}
+
+/*
+...e o texto escondido aparece.
+*/
+.troca-texto:hover .escondido {
+  display: inline;
+}
+

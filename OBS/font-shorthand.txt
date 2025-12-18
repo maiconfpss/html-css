@@ -1,0 +1,18 @@
+p {
+  /* font-style: estilo da fonte (normal, italic, oblique) */
+  /* font-variant: transformação da fonte (normal, small-caps) */
+  /* font-weight: espessura da fonte (normal, bold, 100-900) */
+  /* font-size: tamanho da fonte (obrigatório) */
+  /* line-height: altura da linha (opcional) - vem logo depois do size, separado por / */
+  /* font-family: família da fonte (obrigatório) */
+
+  font: italic small-caps bold 16px/1.5 'Arial', sans-serif;
+
+  /* Explicando cada parte: */
+  /* italic       → font-style */
+  /* small-caps   → font-variant */
+  /* bold         → font-weight */
+  /* 16px         → font-size */
+  /* 1.5          → line-height */
+  /* 'Arial', sans-serif → font-family */
+}

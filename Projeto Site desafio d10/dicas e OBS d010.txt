@@ -1,0 +1,29 @@
+Como no desafio d010 já tinha o txt completo o Guanabara colou ele inteiro no dentro de <main> <article> ai dps do vai envelopando 
+pra por as tags no HTML.
+
+já eu fiz ao contrario peguei txt por txt e fui pondo com tags nem um ta errado so vai de pessoa msm, e tbm eu não sabia dessa aprendi agora 😁.
+
+Acertei como usa o icon da pagina/favicon. ✅
+
+DPS de quebrar muito a cabeça tbm acertei o <aside> e tbm com ajuda de ia. ✅ 
+
+Ja hierarquia o Guanabara fez h1 pra curiosidade no cabeçario e em historia eu so fiz um h1 que foi em curiosidade perguntei pro geminie que 
+disse que dois h1 em uma pagina atrapalha assistivo de tela pra pessoas com deficiências e com isso ele colocou em sequencia cada titulo e sub
+ai eu vi que antes tinha feito errado por ter feito o resto td em h2 pois como histria do android é h2 o resto é h3 pq vem td do h2 historia. ➕➖✅
+
+Em links eu acertei td porem eu coloquei 3 nomes em links que não era pra ser links não prestei atenção o suficiente eles eram pra ser <strong> e
+não links porem acertei msm assim so na próxima prestar mais atenção. ✅
+
+Ele usou var de cor e font oque ajuda pakas eu fiz na raça mais em próximos projetos é bão usar que melhora muito a eficiência pra não ter que ficar caçando
+as coisas pra copiar no código do tamanho do mundo e outra coisa ótima é que se precisar mudar uma cor padrão tipo cor verde pra azul é so mudar a variável
+--cor-verder, --cor-azul... ao invés de fica mudando uma por uma manualmente.
+
+Minha responsividade não ta perfeita mais esta mais que aceitável e funcional ✅
+
+O corpo com responsividade ta diferente porem funcional e beautiful de mais slk mais foi td muito trabalhoso dps tem que fazer mais. ✅
+
+
+
+
+
+

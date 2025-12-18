@@ -1,0 +1,10 @@
+CSS Inline é fazer o css dentro das tags no html e é o pior que tem so se usa em ocasiões muito raras pq se tiver 50 tags tem que fazer dentro dessas 50 tags manualmente e fica mt cansativo e repetitivo.
+
+CSS interno um estilo pra paginas mais simples fazer dentro do html dentro das tags head já é um metado melhor mais tem tbm o externo que é melhor e o certo pra paginas mais complexas e profissional.
+
+CSS Externo o melhor e mais profissional criar um novo arquivo style e conectar com o html ou os html muita mais pratico e 
+profissional e o mais recondado.
+
+Obs: pode misturar os 3 estilos de boa  
+Obs: o inline fica com mais poderoso ele sobrepõem os outros quando colocado numa pagina
+msm que ela já esteja conectado com interno ou externo o inline sobrepõem por esta dentro da tag

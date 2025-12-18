@@ -1,0 +1,78 @@
+<!-- MEDIDAS NO CSS
+====================================================================
+
+1) MEDIDAS ABSOLUTAS
+Essas são TAMANHOS FIXOS.
+Não mudam nunca, independente do tamanho da tela, celular, PC,
+ou do tamanho da letra.
+É tipo usar uma régua na vida real.
+
+- px = pixel. É o pontinho da tela.
+É o mais usado e não muda sozinho.
+
+- cm = centímetro. Igual o da régua mesmo.
+- mm = milímetro.
+- in = polegada.
+- pt = ponto tipográfico.
+- pc = pica (quase ninguém usa).
+
+Use ABSOLUTAS quando você quer que algo fique SEMPRE exatamente
+do mesmo tamanho.
+
+====================================================================
+
+2) MEDIDAS RELATIVAS
+Essas mudam de tamanho dependendo do que está ao redor ou do
+tamanho da tela.
+Elas “crescem” ou “encolhem” automaticamente.
+
+- % = porcentagem do tamanho do bloco onde o elemento está.
+Ex: se a div tem 200px e o elemento tem 50%, ele fica com 100px.
+
+- em = tamanho baseado na fonte do bloco onde está.
+Se a div tiver fonte 20px, então 1em = 20px, 2em = 40px, etc.
+
+- rem = tamanho baseado na fonte do html inteiro.
+Ex: se o html tiver font-size 16px, então 1rem = 16px sempre.
+
+A diferença de *em* e *rem*:
+• em = segue a “mãe” (a div onde está)
+• rem = segue o “chefe geral” (html)
+
+- ex = baseado na altura da letra "x".
+Quase ninguém usa, só existe por tradição.
+
+- vw = porcentagem da largura da tela (viewport width).
+100vw = ocupa a tela toda na largura.
+
+- vh = porcentagem da altura da tela.
+100vh = ocupa a tela toda na altura.
+
+- vmin = pega o menor lado da tela (altura ou largura)
+- vmax = pega o maior lado da tela
+
+====================================================================
+
+EXPLICAÇÃO PRA LEIGO MESMO:
+
+• Imagine que cada elemento (div, texto, botão) fica dentro de uma “caixinha”.
+Essa caixinha é a MÃE.
+
+• Se você usa px → tamanho fixo, não importa o que aconteça.
+• Se você usa % → o tamanho depende do tamanho da mãe.
+• Se usar em → tamanho depende do tamanho da mãe, mas baseado na fonte.
+• Se usar rem → tamanho depende do html (o chefe geral).
+• Se usar vw/vh → tamanho depende da tela do celular/PC.
+• Se usar vmin/vmax → tamanho depende do lado menor/maior da tela.
+
+====================================================================
+
+DICA PRÁTICA PRA VIDA:
+
+- px = quando quer algo exato.
+- rem = quando quer algo proporcional sempre igual em toda a página.
+- em = quando quer algo proporcional só dentro daquele bloco.
+- % = quando quer algo que acompanhe o tamanho do espaço disponível.
+- vw/vh = quando quer algo que dependa da tela (layouts modernos).
+
+====================================================================

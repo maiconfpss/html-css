@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas 2</title>
+</head>
+<body>
+
+    <h1>Trabalho com Listas 2</h1>
+
+    <!-- ================= LISTA ORDENADA ================= -->
+    <h2>Listas Ordenadas</h2>
+
+    <!--
+        start="3" → começa a contagem no número 3.
+        OBS: start só aceita números, mesmo se o type for letras.
+        Ex: para começar no "F", se F é a 6ª letra, então start="6".
+    -->
+    <ol start="3">
+        <li>Acordar</li> <!-- Pode deixar aberto, mas o correto é fechar -->
+        <li>Não mexer no celular</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café da manhã</li>
+
+        <!--
+            type muda o estilo da contagem:
+            A = Letras maiúsculas
+            a = Letras minúsculas
+            I = Romanos maiúsculos
+            i = Romanos minúsculos
+            1 = padrão numérico
+
+            OBS IMPORTANTE:
+            <ol> NÃO aceita type="disc/circle/square".
+            Esses são só para <ul>.
+        -->
+    </ol>
+
+    <!-- ================= LISTA NÃO ORDENADA ================= -->
+    <h2>Listas Não Ordenadas</h2>
+
+    <p>Exemplo com bolinhas (type="circle"):</p>
+
+    <!-- ul aceita disc, circle e square -->
+    <ul type="circle">
+        <li>Feijão</li>
+        <li>Arroz</li>
+        <li>Macarrão</li>
+        <li>Carne</li>
+    </ul>
+
+    <!-- ================= YT MUSIC ================= -->
+    <h2>YT Music For My</h2>
+
+    <ol>
+        <!-- Grupo 1 -->
+        <li>Escolha a Dedo
+            <!-- type="a" só pra exemplo → ideal manter padrão sempre -->
+            <ol type="a">
+                <li>Mala - Hugo Henrique</li>
+                <li>Abre a Porta - Gusttavo Lima</li>
+                <li>Jesus Chorou - Racionais MC's</li>
+            </ol>
+        </li>
+
+        <!-- Grupo 2 -->
+        <!--
+            IMPORTANTE:
+            Sempre fechar o </li> DEPOIS da sublista.
+            Nunca fechar antes, senão a sublista fica solta.
+        -->
+        <li>Ouvir Novamente
+            <ol type="A" start="4"> <!-- start em letras funciona via número -->
+                <li>Nosso Futuro - Toque Dez</li>
+                <li>Lisboa - ANAVITÓRIA e Lenine</li>
+                <li>Lovely - Billie Eilish e Khalid</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- ================= STREAMINGS FAVORITOS ================= -->
+    <h2>My Streamings Fov</h2>
+
+    <!-- lista principal das categorias -->
+    <ol>
+
+        <!-- Categoria 1 -->
+        <li>Doramas
+            <ul>
+                <!-- Item 1 -->
+                <li>My Demon Favorito
+                    <!-- Sub comentário do dorama -->
+                    <ul type="circle">
+                        <li>Bom pra K7</li>
+                    </ul>
+                </li>
+
+                <!-- Item 2 -->
+                <li>Desgraça ao seu Dispor
+                    <ul type="disc">
+                        <li>Tem a melhor Ost</li>
+                    </ul>
+                </li>
+
+                <!-- Item 3 -->
+                <li>Gênio dos Desejos
+                    <ul type="square">
+                        <li>Mais recente, mas já é um dos fov</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Categoria 2 -->
+        <li>Series
+            <!-- ul dentro do li é onde muda o marcador (quadrado aqui) -->
+            <ul type="square">
+                <li>Shadow Hunters</li>
+                <li>Teen Wolf</li>
+                <li>The Flash</li>
+            </ul>
+        </li>
+
+    </ol>
+
+    <h2>ESSES TIPOS DE LINHAS E SUB-LINHAS SÃO MUITO USADOS EM MENUS ⇮</h2>
+
+    <!-- ================= LISTA DE DEFINIÇÃO ================= -->
+    <h2>Lista de Definições</h2>
+
+    <!-- dl é o contêiner principal -->
+    <dl>
+        <dt>HTML</dt> <!-- Termo -->
+        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd> <!-- Definição -->
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do design de um site.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade em um site.</dd>
+    </dl>
+
+</body>
+</html>

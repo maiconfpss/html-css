@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos</title>
+</head>
+
+<body>
+    <h1>Inserindo Videos Localmente</h1>
+    <p>Este video esta sendo inserido do meu pc mais ta sendo simulado de um servidor pago</p>
+    <video src="midia/videokellyhd.mp4" width="300" poster="imagens/girl-capuz-preto-quadrada.jpg"
+    controls>
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <h2>Audio</h2>
+    <audio src="midia/daily.mp3" loop controls>
+
+    </audio>
+
+    <h3>Outro jeito</h3>
+    <video width="400" poster="imagens/girl-capuz-preto-quadrada.jpg" 
+   loop controls>
+        <source src="midia/ff.mp4" type="video/mp4" />
+    </video>"
+    <!-- mesmos conceitos de audios so que as pra ver melhor prescisa de width no html se ainda nao for mexer no css se ja for pode fazer pelo css-->
+    <!-- aqui fica caro o consumo entao preferir usar videos externos ou deixar o video o maximo mais pequeno -->
+
+    <h2>Videos sem custos direto do YT</h2>
+
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/U8kuDpClokg?si=9mapH8dqsJ7IPhrO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Video incorporado do YouTube so copia e cola sem custos pra manter servidor-->
+     
+     <!-- Dar preferencia pra outros sites de hospedagem como vimeo, panda video,
+       bunny.net(steam) cloudflare stream o yt nao bloqueia links e pode ter pirataria 
+       se o foco for algo pago tipo curso por exemplo. -->
+</body>
+
+</html>

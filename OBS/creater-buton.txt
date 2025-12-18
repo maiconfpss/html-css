@@ -1,0 +1,46 @@
+<!-- Botão normal -->
+<button class="btn-primario">Enviar</button>
+
+<!-- Botão com tamanho fixo -->
+<button class="btn-primario-fixo">Confirmar</button>
+
+
+/* Botão padrão: cresce conforme o texto */
+.btn-primario {
+  background: #4a7cff;   /* cor de fundo */
+  color: white;          /* cor do texto */
+  padding: 10px 20px;    /* aumenta o botão sem travar tamanho */
+  font-size: 16px;       /* tamanho do texto */
+  border: none;          /* remove a borda padrão feia */
+  border-radius: 8px;    /* arredonda os cantos */
+  cursor: pointer;       /* mãozinha */
+  transition: 0.2s;      /* animação suave */
+}
+
+/* Mudança quando passa o mouse */
+.btn-primario:hover {
+  background: #2f5ce8;
+}
+
+/* Botão com tamanho travado */
+.btn-primario-fixo {
+  background: #4a7cff;
+  color: white;
+  width: 150px;          /* largura fixa */
+  height: 45px;          /* altura fixa */
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  /* alinhando o texto no centro da caixa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover igual pra manter padrão */
+.btn-primario-fixo:hover {
+  background: #2f5ce8;
+}

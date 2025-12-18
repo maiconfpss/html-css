@@ -1,0 +1,4 @@
+no meu desafio 10 eu fiz a nav/menu dentro do header e o Guanabara fez entre header e main como algo separado 
+é algo mais semântico porem não que dizer que é melhor ou pior apenas muda com o foco tipo se o menu for algo
+mais separado e deixar o cabeçario so titulo e tals usa o metado que o Guanabara usou se for algo mais simples 
+que seja de boa o menu junto do cabeçario usa meu metado.

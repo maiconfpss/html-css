@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista HTML</title>
+</head>
+<body>
+    <h1>Listas HTML</h1>
+    <h2>Lista Não Ordenada &lt;ul&gt;</h2>
+    <!--usados quando a ordem dos itens não importa. E marcadores podem ser bolinhas, círculos ou quadrados. -->
+
+    <!-- ol é pra listas ordenadas e ul para não ordenadas e li para itens -->
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <p>EX= <pre>
+            <code>
+                &lt;ul&gt;
+                    &lt;li&gt;item 1&lt;/li&gt;
+                    &lt;li&gt;item 2&lt;/li&gt;
+                    &lt;li&gt;item 3&lt;/li&gt;
+                &lt;/ul&gt;
+            </code>
+        </pre> <!--&lt;/&gt; <>-->
+    </p>
+    </ul>
+    <h2>Exemplos de marcadores</h2>
+    <ul>
+        <li
+         type="disc">Disco <strong> &lt;type="disc"&gt;</strong></li> <!--Circulo preto-->
+        <li type="circle">Círculo <strong> &lt;type="circle"&gt;</strong></li> <!--Circulo bolinha transparente-->
+        <li type="square">Quadrado <strong>&lt;Type="square "&gt;</rt></strong></li> <!--Quadrado preto-->
+    </ul>
+
+    <h2>Lista Ordenada &lt;ol&gt;</h2>
+    <!--usados quando a ordem dos itens importa. E os marcadores podem ser números, letras maiúsculas , letras minúsculas, números romanos maiúsculos e números romanos minúsculos. -->
+    <ol>
+        <li>levantar</li>
+        <li>escovar os dentes</li>
+        <li>tomar café da manhã</li> <!--padrão 1,2,3-->
+    </ol>
+    
+    <ol type="1"> <!--números-->
+        <li>levantar </li>
+        <li>escovar os dentes </li>
+        <li>tomar café da manhã </li>
+    </ol>
+    <ol type="A"> <!--letras maiúsculas-->
+        <li>levantar </li>
+        <li>escovar os dentes </li>
+        <li>tomar café da manhã </li>
+    </ol>
+    <ol type="a"> <!--letras minúsculas-->
+        <li>levantar </li>
+        <li>escovar os dentes </li>
+        <li>tomar café da manhã </li>
+    </ol>
+    <ol type="I"> <!--números romanos maiúsculos-->
+        <li>levantar </li>
+        <li>escovar os dentes </li>
+        <li>tomar café da manhã </li>
+    </ol>
+    <ol type="i"> <!--números romanos minúsculos-->
+        <li>levantar </li>
+        <li>escovar os dentes </li>
+        <li>tomar café da manhã </li>
+    </ol>
+
+    <h2>Listas dentro de listas</h2>
+    <ol>
+        <li>Frutas</li>
+        <li>Vegetais
+            <ul>
+                <li>Alface</li>
+                <li>Tomate</li>
+                <li>Cenoura</li>
+            </ul>
+        <li>Doces</li>
+        </ol> <!--dentro de ol fica numeros dentro de ul fica bolinhas -->
+
+<h2>Listas de jogos favoritos</h2>
+
+<ul>  <!--ul principal, base do código-->
+    <li>Steam   <!--li principal, Da steam 1° Grupo/categoria-->
+        <ol>   <!--ol principal do grupo steam fazendo base-->
+            <li>Geral  <!--li sub-grupo Geral do grupo steam-->
+                <ul type="square">  <!--ul sub-grupo de geral com quadrados-->
+                    <li>Need for Speed&trade; Heat</li> <!--itens da lista geral-->
+                    <li>Grand Theft Auto V GTAV Rp</li> <!--itens da lista geral-->
+                    <li>Red Dead Redemption 2</li> <!--itens da lista geral-->
+                    <li>Demon Slayer - Kimetsu no Yaiba</li> <!--itens da lista geral-->
+                </ul>   <!--fim ul sub-grupo de geral com quadrados-->
+            </li>   <!--fim li sub-grupo Geral do grupo steam-->
+
+            <li>Forza   <!--li sub-grupo Forza do grupo steam-->
+                <ul type="square">  <!--ul sub-grupo de Forza com quadrados-->
+                    <li>Forza Horizon 4</li> <!--itens da lista Forza-->
+                    <li>Forza Horizon 5</li>
+                </ul>   <!--fim ul sub-grupo de Forza com quadrados-->
+            </li>   <!--fim li sub-grupo Forza do grupo steam-->
+        </ol>   <!--fim ol principal do grupo steam-->
+    </li>   <!--fim li principal, 1° Grupo/categoria-->
+
+    <li>Epic   <!--li principal, Da epic 2° Grupo/categoria-->
+        <ol>   <!--ol principal do grupo epic fazendo base-->
+            <li>Geral   <!--li sub-grupo Geral do grupo epic-->
+                <ul type="square">   <!--ul sub-grupo de geral com quadrados-->
+                    <li>EA ESPORTS FC&trade; 24</li> <!--itens da lista geral-->
+                    <li>Cyberpunk 2077</li> <!--itens da lista geral-->
+                    <li>Cities Skylines</li> <!--itens da lista geral-->
+                </ul>   <!--fim ul sub-grupo de geral com quadrados-->
+            </li>   <!--fim li sub-grupo Geral do grupo epic-->
+
+            <li>Fov   <!--li sub-grupo Fov do grupo epic-->
+                <ul type="square">   <!--ul sub-grupo de Fov com quadrados-->
+                    <li>EA ESPORTS FC&trade; 24</li> <!--itens da lista Fov-->
+                    <li>Cyberpunk 2077</li> <!--itens da lista Fov-->
+                </ul>   <!--fim ul sub-grupo de Fov com quadrados-->
+            </li>   <!--fim li sub-grupo Fov do grupo epic-->
+        </ol>   <!--fim ol principal do grupo epic-->
+    </li>   <!--fim li principal, Da epic 2° Grupo/categoria-->
+</ul>   <!--fim ul principal, base do código-->
+
+<!--• Steam
+    1. Geral
+        ■ Need for Speed Heat
+        ■ GTAV RP
+        ■ RDR2
+        ■ Demon Slayer
+    2. Forza
+        ■ Forza Horizon 4
+        ■ Forza Horizon 5
+
+• Epic
+    1. Geral
+        ■ EA FC 24
+        ■ Cyberpunk 2077
+        ■ Cities Skylines
+    2. Fov
+        ■ EA FC 24
+        ■ Cyberpunk 2077
+--> <!--Resumo de como ficou o codigo acima-->
+
+<!--Checklist de Avaliação
+
+        Parte   |  Acertou?	 |  Motivo
+<ul> principal	    ✅	Categoriza as plataformas
+<li> de plataformas	✅	Cada uma vira um grupo
+<ol> de subgrupos	✅	Cria ordem (1, 2…)
+<li> de subgrupos	✅	Nome dos subgrupos
+<ul type="square">	✅	Lista sem ordem dos jogos
+<li> dos jogos	    ✅	Itens certinhos
+Fechamento das tags	✅	Zero erros
+Comentários	        ✅	Perfeito e didático
+-->
+
+</body>
+</html>

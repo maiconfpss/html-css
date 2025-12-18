@@ -1,0 +1,1 @@
+<main> <!-- Tipo div porem com a semantica de ser o item princiapal-->

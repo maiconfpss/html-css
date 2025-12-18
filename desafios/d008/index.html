@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+
+    <style>
+        mark {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>negrito / destaque</h2>
+    <p>
+        Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semantica)
+    </p> <!-- <B> nao é semantica priorizar usar o <strong> que nao é apenas visual ingual ao <b> o <strong> é visual e tem significado-->
+
+
+    <p>
+        Nesta frase temos um <strong>termo em negrito</strong> usando a tag STRONG (semantica)
+    </p>
+    
+
+    <h2>itálico / ênfase</h2>
+
+    <p>
+        Nesta frase temos um <i>termo em itálico</i> usando a tag I (não semantica)
+    </p> <!-- <I> nao é semantica priorizar usar o <em> que nao é apenas visual ingual ao <i> o <em> é visual e tem significado-->
+
+    <p>
+        Nesta frase temos um <em>termo em itálico</em> usando a tag EM (semantica)
+    </p>
+
+    <h2>marca texto</h2>
+
+    <p>
+        Nesta frase temos um <mark style="background-color: lime;">texto em destaque</mark> usando a tag MARK
+        <!-- MARK é um marca texto, nao tem como mumdar sua cor pelo html apenas pelo css no exemplo acima foi colocado o style com background-color: lime; pra mudar pro verde lime que é o css e foi colocado o style diretamente dentro da tag MARK pra pegar so o texto marcado -->
+    </p>
+
+    <p>E no outro paragrafo, temos <mark> outro texto marcado</mark> no final </p>
+    <!-- para marca mais de um o certo é fazer com o style normal ao inves de por a tag style detro de todos os marks pra nao ficar poluido e tbm fica sem nexus se pode fazer apenas um codigo pelo css ao inves de de um a cada marcador de texto "PRA DEIXAR O SEGUNDO MARCA TEXTO EM VERDE LIME TBM FOI CRIADO O STYLE LA EM CIMA NA HEAD" -->
+
+    <h2>texto deletado</h2>
+    <p>
+        Nesta frase temos um <del>termo deletado</del> usando a tag DEL
+    </p>
+
+    <h2>texto grande e pequeno</h2>
+    <p>
+        Nesta frase temos um <big>termo maior</big> usando a tag BIG
+        e nesta outra frase temos um <small>termo menor</small> usando a tag SMALL
+        <!-- BIG e SMALL são tags não semânticas, o ideal é usar CSS para definir tamanhos de fonte e "BIG" é uma tag obsoleta -->
+    </p>
+
+    <h2>texto inserido</h2>
+    <p>
+        Nesta frase temos um <ins>termo inserido</ins> usando a tag INS (nao semantica)
+        nesta frase temos um <u>termo sublinhado</u> usando a tag U (semantica)
+    </p>
+    <h2>Texto sobrescrito</h2>
+    <p>para inserir coisas do tipo x<sup>20</sup>+3</p><!--<sup> é pra deixar o texto acima do normal, como um sobrescrito>-->
+    
+        <h2>Texto subscrito</h2>
+    <p>para inserir coisas do tipo H<sub>2</sub>O</p><!--<sub> é pra deixar o texto abaixo do normal, como um subscrito>-->
+</body>
+</html>
