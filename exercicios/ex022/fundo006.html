@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Posicionameto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header.cab {
+            background-image: url(imagens/wallpaper006.jpg);
+            height: 100px;
+            background-size: 100px;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: darkblue;
+            font-size: 17px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        header.cab div.menu ul{
+            display: flex;
+            justify-content: center;
+            padding: 35px;
+            gap: 12px;
+        }
+
+        div.menu ul {
+            list-style: none;
+        }
+
+        div.menu ul li {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            cursor: pointer;
+            font-size: 15px;
+            color: rgb(19, 163, 211);
+        }
+
+        div.menu ul a {
+            color: rgb(19, 163, 211);
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        div.menu ul a:hover {
+            border-bottom: 2px solid rgb(19, 163, 211);
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="cab">
+        <h1>
+            Testando cabeçalho com poscionamento
+        </h1>
+
+        <div class="menu">
+           <ul>
+               <li>
+                <a href="#">Home</a>
+               </li>
+
+               <li>
+                <a href="#">Feed</a>
+               </li>
+
+               <li>
+                <a href="#">Mensagens</a>
+               </li>
+           </ul>
+        </div>
+    </header>
+    
+    
+</body>
+</html>
