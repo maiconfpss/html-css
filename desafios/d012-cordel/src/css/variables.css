@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --cor-ink-black: #0c1618;
+    --cor-alabaster-gray: #7b7b7b;
+    --cor-white: #eeeeee;
+}
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", sans-serif;
+    --font3: "Sriracha", cursive;
+    
+
+}

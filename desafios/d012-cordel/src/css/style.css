@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: var(--cor-alabaster-gray);
+}
+
+header {
+  background-color: var(--cor-ink-black);
+  color: var(--cor-white);
+  text-align: center;
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-family: var(--font2);
+  font-size: 12vw;
+}
+header > p {
+  color: var(--cor-alabaster-gray);
+  padding-bottom: 50px;
+  font-family: var(--font1);
+}
+a {
+  text-decoration: none;
+  color: var(--cor-white);
+  font-weight: 900;
+}
+a:hover {
+  text-decoration: underline;
+}
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-family: var(--font3);
+  font-size: clamp(2rem 5vw 3rem);
+}
+section p {
+  padding-bottom: 2em;
+}
+section.normal {
+  background-color: var(--cor-h1);
+  color: var(--cor-ink-black);
+}
+section.imagem {
+  background-color: #0c161896;
+  color: var(--cor-white);
+  background-size: cover;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+  /* sombra pra dentro da imagem*/
+  background-attachment: fixed;
+  /* com esse bga fixed ficou efeito paralax fica como a janela de um trem ao passar por um jardim por exemplo*/
+}
+section.imagem > p {
+  display: inline-block; /* com isso a caixa ficou colada no txt ai coloquei o paddind 10 pra respirar */
+  padding: 10px;
+  background-color: rgba(12, 22, 24, 0.5);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.703);
+}
+section#img1 {
+  background-image: url(../imagens/background001.jpg);
+  background-position: right center;
+  /* ../ pra achar as pasta do jeito certo de outro jeito acha com o control tab mais nao funciona*/
+}
+section#img2 {
+  background-image: url(../imagens/background002.jpg);
+}
+footer {
+  background-color: var(--cor-ink-black);
+  text-align: center;
+  color: var(--cor-white);
+  padding: 13px;
+  font-family: var(--font1);
+  font-size: 0.7em;
+}
