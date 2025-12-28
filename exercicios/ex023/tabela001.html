@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        table, td { /* pegando bordas e cor na tabela TABLE e nos dados TD*/
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            border: 1px solid black; /* Aqui criou as linhas da tabela*/
+            background-color: #9a8a8a;
+            padding: 8px; /* Aqui o padding esta no conteudo entao ele fica como espaçamento do conteudo da caixa
+            significando que como o conteudo esta no meio em cima o padding ta sendo o respiramento pra o conteudo 
+            nao fica colado na linha de cima da caixa no caso oque esta fazendo a altura é o height no css 
+            abaixo table... */
+
+            vertical-align: top; /* Aqui fica como alinhamento vertical cima pra baixo ou ao contrario
+            TOP é cima e BOTTOM é baixo e MIDDLE é no meio 
+            OBS, Eu tentei deixa o conteudo em cima em baixo que é apenas css table e nao deu pq table é 
+            so a caixa ai tentei aqui no table, td e deu certo pq aqui sim é o conteudo*/
+        }
+        table {
+            width: 100%; /* aqui ficou como 100% de largura da pagina horizontalmente  largura dos lados*/
+            
+            height: 200px; /* Aqui ta a autura dos cards da tabela coloquei alto pra ficar super claro o exemplo 
+            e acima no css table, td  ta explicado o paddind de la que esta sendo usado la */
+
+            text-align: center; /* Aqui fica como alinhamento horizontal lados */
+
+            vertical-align: top; /* Aqui fica como alinhamento vertical cima pra baixo ou ao contrario
+            TOP é cima e BOTTOM é baixo e MIDDLE é no meio*/
+
+            border-collapse: collapse; /* Esse border collapse mexeu nas
+            bordas da tabela antes tava duas separadas tipo varias coixinhas
+            uma dentro da outra e com isso ficou um quadrado com os cortes 
+            tipo tabela normal do excel*/
+        }
+        h1 {
+            text-align: center;
+            color: rgb(0, 106, 255);
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.630);
+        }
+        .green {
+            background-color: rgb(49, 186, 49);
+        }
+        .yellow {
+            background-color: rgb(222, 196, 45);
+        }
+        .blue-turquoise {
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hierquia de Tabela (Simples)
+     Table = Tabela
+     Table Row TR = Linha de Tabela
+     Table Header TH = Cabeçario de Tabela
+     Table Data TD = Dado de Tabela
+     -->
+
+    <h1>Primeira tabela</h1>
+    <table>
+        <tr>
+            <td class="green">Nome</td>
+            <td class="yellow">Sobrenome</td>
+            <td class="blue-turquoise">Idade</td>
+        </tr>
+        <tr>
+            <td>Maicon</td>
+            <td>Souza</td>
+            <td>21</td>
+        </tr>
+
+    
+</body>
+</html>
