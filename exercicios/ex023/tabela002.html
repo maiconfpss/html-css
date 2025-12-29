@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,6 +58,20 @@
         tfoot {
             background-color: beige;
         }
+        tbody tr:nth-child(odd) {
+            background-color: #9d9b9892;
+        }
+        thead {
+            background-color: beige;
+        }
+        .total-num {
+            text-align: right;
+            background-color: beige;
+        }
+        tbody tr th {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: normal;
+        }
 
     </style>
 </head>
@@ -79,157 +93,157 @@
             População dos Estados Brasileiros
         </caption>
             <thead>
-                <tr>
-                    <th></th>
-                    <th scope="col">Estados</th>
-                    <!-- com o scope="col" tds dentro dele sao filhos dele isso nao mexe em nd visualmente mais da semantica e fica
-                     melhor pro SEO ajuda a ser achado pelos mecanisco de busca. -->
-                    <th scope="col">População</th>
-                </tr>
-            </thead>
-            <tbody class="bodi">
-                <tr>
-                    <td>1</td>
-                    <td scope="row">São Paulo</td>
-                    <!-- msm coisa do coll so que esse é mais pra resultados tipo o col td que tiver abaixo seu filho ele que manda 
-                     e o row td que tiver a frente seus resultados tipo sao paulo ➡️ 46 081 801 o seu resultado. -->
-                    <td class="num">46 081 801</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td scope="row">Minas Gerais</td>
-                    <td class="num">21 393 441</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Rio de Janeiro</td>
-                    <td class="num">17 223 547</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Bahia</td>
-                    <td class="num">14 870 907</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Paraná</td>
-                    <td class="num">11 890 517</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Rio Grande do Sul</td>
-                    <td class="num">11 233 263</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Pernambuco</td>
-                    <td class="num">9 562 007</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Ceará</td>
-                    <td class="num">9 268 836</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Pará</td>
-                    <td class="num">8 711 196</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Santa Catarina</td>
-                    <td class="num">8 187 029</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Goiás</td>
-                    <td class="num">7 423 629</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Maranhão</td>
-                    <td class="num">7 018 211</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>Amazonas</td>
-                    <td class="num">4 321 616</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>Paraíba</td>
-                    <td class="num">4 164 468</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>Espírito Santo</td>
-                    <td class="num">4 126 854</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>Mato Grosso</td>
-                    <td class="num">3 893 659</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>Rio Grande do Norte</td>
-                    <td class="num">3 455 236</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>Piauí</td>
-                    <td class="num">3 384 547</td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td>Alagoas</td>
-                    <td class="num">3 220 848</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>Distrito Federal</td>
-                    <td class="num">2 996 899</td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>Mato Grosso do Sul</td>
-                    <td class="num">2 924 631</td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td>Sergipe</td>
-                    <td class="num">2 299 425</td>
-                </tr>
-                <tr>
-                    <td>23</td>
-                    <td>Rondônia</td>
-                    <td class="num">1 751 950</td>
-                </tr>
-                <tr>
-                    <td>24</td>
-                    <td>Tocantins</td>
-                    <td class="num">1 586 859</td>
-                </tr>
-                <tr>
-                    <td>25</td>
-                    <td>Acre</td>
-                    <td class="num">884 372</td>
-                </tr>
-                <tr>
-                    <td>26</td>
-                    <td>Amapá</td>
-                    <td class="num">806 517</td>
-                </tr>
-                <tr>
-                    <td>27</td>
-                    <td>Roraima</td>
-                    <td class="num">738 772</td>
-                </tr>
+                    <tr>
+                        <th></th>
+                        <th scope="col">Estados</th>
+                        <!-- com o scope="col" tds dentro dele sao filhos dele isso nao mexe em nd visualmente mais da semantica e fica
+                         melhor pro SEO ajuda a ser achado pelos mecanisco de busca. -->
+                        <th scope="col">População</th>
+                    </tr>
+                                </thead>
+                                <tbody class="bodi">
+                    <tr>
+                        <td>1</td>
+                        <th scope="row">São Paulo</td>
+                        <!-- msm coisa do coll so que esse é mais pra resultados tipo o col td que tiver abaixo seu filho ele que manda
+                         e o row td que tiver a frente seus resultados tipo sao paulo ➡️ 46 081 801 o seu resultado. -->
+                        <td class="num">46 081 801</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <th scope="row">Minas Gerais</td>
+                        <td class="num">21 393 441</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <th scope="row">Rio de Janeiro</td>
+                        <td class="num">17 223 547</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <th scope="row">Bahia</td>
+                        <td class="num">14 870 907</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <th scope="row">Paraná</td>
+                        <td class="num">11 890 517</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <th scope="row">Rio Grande do Sul</td>
+                        <td class="num">11 233 263</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <th scope="row">Pernambuco</td>
+                        <td class="num">9 562 007</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <th scope="row">Ceará</td>
+                        <td class="num">9 268 836</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <th scope="row">Pará</td>
+                        <td class="num">8 711 196</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <th scope="row">Santa Catarina</td>
+                        <td class="num">8 187 029</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <th scope="row">Goiás</td>
+                        <td class="num">7 423 629</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <th scope="row">Maranhão</td>
+                        <td class="num">7 018 211</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <th scope="row">Amazonas</td>
+                        <td class="num">4 321 616</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <th scope="row">Paraíba</td>
+                        <td class="num">4 164 468</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <th scope="row">Espírito Santo</td>
+                        <td class="num">4 126 854</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <th scope="row">Mato Grosso</td>
+                        <td class="num">3 893 659</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <th scope="row">Rio Grande do Norte</td>
+                        <td class="num">3 455 236</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <th scope="row">Piauí</td>
+                        <td class="num">3 384 547</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <th scope="row">Alagoas</td>
+                        <td class="num">3 220 848</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <th scope="row">Distrito Federal</td>
+                        <td class="num">2 996 899</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <th scope="row">Mato Grosso do Sul</td>
+                        <td class="num">2 924 631</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <th scope="row">Sergipe</td>
+                        <td class="num">2 299 425</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <th scope="row">Rondônia</td>
+                        <td class="num">1 751 950</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <th scope="row">Tocantins</td>
+                        <td class="num">1 586 859</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <th scope="row">Acre</td>
+                        <td class="num">884 372</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <th scope="row">Amapá</td>
+                        <td class="num">806 517</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <th scope="row">Roraima</td>
+                        <td class="num">738 772</td>
+                    </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <th colspan="2"><span class="label">Total</span></th>
-                    <td class="num"><strong>203 000 000</strong></td>
+                    <td class="total-num"><strong>203 000 000</strong></td>
                 </tr>
             </tfoot>
         </table>
