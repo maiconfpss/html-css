@@ -24,3 +24,8 @@ fica como o titulo da pagina e o CAPTION como oque é a tabela e se usa depois d
 Coloquei a barra de pai fixa onde fica o estado e população pra sempre tiver vendo doque se trata o conteúdo dado msm na ultima linha de uma tabela grande 
 pra isso coloquei position relative na table e position sticky, top 0, background-color pra não ficar so o nome e um padding 12px pra não ficar 
 muito fina ingual tava pq eu não tinha posto nenhum no cabeçario isso td na thead > tr > th.
+
+
+Tbm tem COLSPAN que aumenta quadrado que falta tipo ne um ABC so tem o A e B ai em baixo tem o D,F e G iria ficar sem o espaço do C tipo uma escada porem entretanto toda via se usar o COLSPAN no B por exemplo o B tomaria o espaço que que era pra ser do c e a tabela iria ficar quadradinha sem furos.
+
+Tbm tem o ROWSPAN que é a msm coisa so que pra baixo o COLSPAN faz completar pros lados e ROWSPAN pra baixo.
