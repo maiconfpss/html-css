@@ -16,6 +16,13 @@
             padding: 10px;
             background-color: beige;
             color: #0e0e0e;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            caption-side: top;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid black;;
+            border-bottom: none;
         }
         h1 {
             font-family: 'Courier New', Courier, monospace;
@@ -31,6 +38,14 @@
             width: 500px;
             border-collapse: collapse;
             background: #e1e6e1;
+            position: relative;
+            border: 1px solid black;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: beige;
+            padding: 12px;
         }
         table, tr, td {
             font-family: 'Courier New', Courier, monospace;
