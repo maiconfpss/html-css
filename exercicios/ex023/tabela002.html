@@ -9,6 +9,14 @@
         body {
             background-color: #232388;
         }
+        caption {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: beige;
+            color: #0e0e0e;
+        }
         h1 {
             font-family: 'Courier New', Courier, monospace;
             text-align: center;
@@ -35,7 +43,7 @@
         }
         .label {
             display: inline-block;
-            transform: translate(83px);
+            transform: translate(-50px);
             /* Aqui eu usei uma clase dentro de uma span e usei o transform para mudar 
             a posição do texto sem mexer em mais nd como o span tava no total eu consegui mexer 
             o total sem quebrar o codigo.
@@ -43,10 +51,12 @@
         }
         tfoot > tr > td {
             padding: 5px;
-            background-color: beige;
             /* Aqui eu tive que desenhar exatamente onde ele deveria mexer com > pois ele sempre 
             tava sendo sobreposto por causa do (table, tr, td) dos conteudos
             */
+        }
+        tfoot {
+            background-color: beige;
         }
 
     </style>
@@ -65,22 +75,29 @@
 
     <div class="centralizar">
         <table>
+            <caption>
+            População dos Estados Brasileiros
+        </caption>
             <thead>
                 <tr>
                     <th></th>
-                    <th>Estados</th>
-                    <th>População</th>
+                    <th scope="col">Estados</th>
+                    <!-- com o scope="col" tds dentro dele sao filhos dele isso nao mexe em nd visualmente mais da semantica e fica
+                     melhor pro SEO ajuda a ser achado pelos mecanisco de busca. -->
+                    <th scope="col">População</th>
                 </tr>
             </thead>
             <tbody class="bodi">
                 <tr>
                     <td>1</td>
-                    <td>São Paulo</td>
+                    <td scope="row">São Paulo</td>
+                    <!-- msm coisa do coll so que esse é mais pra resultados tipo o col td que tiver abaixo seu filho ele que manda 
+                     e o row td que tiver a frente seus resultados tipo sao paulo ➡️ 46 081 801 o seu resultado. -->
                     <td class="num">46 081 801</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Minas Gerais</td>
+                    <td scope="row">Minas Gerais</td>
                     <td class="num">21 393 441</td>
                 </tr>
                 <tr>
@@ -211,7 +228,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="2"><span class="label">Total</span></td>
+                    <th colspan="2"><span class="label">Total</span></th>
                     <td class="num"><strong>203 000 000</strong></td>
                 </tr>
             </tfoot>

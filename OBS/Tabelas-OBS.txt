@@ -1,0 +1,20 @@
+Em resumo se usa TD = tabela de dados quando é pra dados o conteúdo da tabela.
+
+TH = Cabeçario da tabela o inicio e o fim tbm pode ser se não for conteúdo tipo na minha segunda tabela foi o ex do curso que é uma tabela de população 
+e  la tem os estados e números de população e no fim o total então la fica total como TH por ser tipo uma pergunta ou resposta e não dado ai o numero total
+fica com como TD pq é dado os dados totais das população de cada estado.
+
+E tem TR que é a tabela as linhas é tipo a caixa do conteúdo oque agrupa o conteúdo ai é <tr> caixa </tr> e ou conteúdo td ou cabeçario e footer.
+
+
+scope explica quem manda em quem. 
+
+scope="col" → título da coluna. é o titulo  ele transforma tal frase em chefe tipo por exemplo ESTADOS todos estados abaixo dele vai ser filhos dele.
+
+scope="row" → título da linha.  quem tiver na frente dele vai ser tipo filhos dele tbm tipo resultados de quantidade de pessoas.
+
+eles não faz nd visualmente mais deixa semântico e ajuda nos mecanisco de buscas SEO.
+
+
+CAPTION → legenda explicativa da tabela não substitui o H1 Quase nunca a não ser que o site seja apenas a tabela mais msm assim é bom ter H1, o H1
+fica como o titulo da pagina e o CAPTION como oque é a tabela e se usa depois do table se tiver thead acima dele.
