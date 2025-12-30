@@ -29,3 +29,5 @@ muito fina ingual tava pq eu não tinha posto nenhum no cabeçario isso td na th
 Tbm tem COLSPAN que aumenta quadrado que falta tipo ne um ABC so tem o A e B ai em baixo tem o D,F e G iria ficar sem o espaço do C tipo uma escada porem entretanto toda via se usar o COLSPAN no B por exemplo o B tomaria o espaço que que era pra ser do c e a tabela iria ficar quadradinha sem furos.
 
 Tbm tem o ROWSPAN que é a msm coisa so que pra baixo o COLSPAN faz completar pros lados e ROWSPAN pra baixo.
+
+e quando tem um quadrado estendido ele ocupa espaço e transformar o começo de um próximo em uma nova sequencia tipo na tabela004 o c desce ante o fim e ai o m começa no 2 então termina no 5 ai fica certo e cemantico.
