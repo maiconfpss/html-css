@@ -21,6 +21,7 @@ CAPTION → legenda explicativa da tabela não substitui o H1 Quase nunca a não
 fica como o titulo da pagina e o CAPTION como oque é a tabela e se usa depois do table se tiver thead acima dele.
 
 
+FIXAR O CABEÇARIO
 Coloquei a barra de pai fixa onde fica o estado e população pra sempre tiver vendo doque se trata o conteúdo dado msm na ultima linha de uma tabela grande 
 pra isso coloquei position relative na table e position sticky, top 0, background-color pra não ficar so o nome e um padding 12px pra não ficar 
 muito fina ingual tava pq eu não tinha posto nenhum no cabeçario isso td na thead > tr > th.
@@ -31,5 +32,14 @@ Tbm tem COLSPAN que aumenta quadrado que falta tipo ne um ABC so tem o A e B ai 
 Tbm tem o ROWSPAN que é a msm coisa so que pra baixo o COLSPAN faz completar pros lados e ROWSPAN pra baixo.
 
 e quando tem um quadrado estendido ele ocupa espaço e transformar o começo de um próximo em uma nova sequencia tipo na tabela004 o c desce ante o fim e ai o m começa no 2 então termina no 5 ai fica certo e cemantico.
+
+
+Tbm tem esse colgroup 
+<colgroup>
+            <col class="pink" >
+            <col class="blue" span="2">
+</colgroup>    Que serve pra cobrir colunas tipo uma coluna de alunos ai tem o grupo de alunos e os nomes abaixo se for uns 5 a 10 não é pouco pra fzer mais da 
+porem se for tipo 100,200,300 fica emsuportavel fzer 200,300 classes pra cd ai o colgroup resolve com apenas 5 linha de comando mais omenos, E tbm se for muitos grupos da pra usar o colspan/span 2,4,6,8 o tanto de colunas que querer ou fazer mais um colgroup pular outros pra pintar apenas os que querer.
+
 
 https://youtu.be/muKp1-jcs3Q?si=kf4oYFDBITeaOACF   Guanabara explicando melhor sobre os scopes.

@@ -1,13 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio D014</title>
-</head>
-<body>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: aliceblue;
+            background-color: #232388;
+            margin: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        caption {
+            padding: 13px;
+            font-size: large;
+            background-color: #06711c;
+            color: aliceblue;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+        th, td {
+            border: 1px solid rgb(11, 83, 3);
+            padding: 8px;
+            text-align: center;
+        }
+
+        thead {
+            background: #06711c;
+        }
+
+        tbody {
+            background-color: #146c49;
+        }
+        .exatas-humanas {
+            text-align: left;
+            background-color: #06711c;
+        }
+        .pink {
+            background-color: pink;
+        }
+        .blue {
+            background-color: blue;
+        }   /* aqui era pra funcionar o colgroup pra mexer nas cores das colunas td so que pra isso nao poder 
+        ter cor nos lugares tipo o tbody se nao o colgroup é sobreposto*/ 
+
+    </style>
+</head>
+
+<body>
     
-    
+    <table>
+
+        <!--
+        TA FUNCIONAL POREM DEIXEI COMENTADO POR CAUSA DO TBODY E THEAD QUE TA SOBREPONDO
+        <colgroup>
+            <col class="pink" >
+            <col class="blue" span="2">
+        </colgroup>
+        -->
+
+        <caption>Cadrasto</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matematica</td>
+                <td>8</td>
+                <td>7</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>6</td>
+                <td>7</td>
+                <td>6.5</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>9</td>
+                <td>8</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>5</td>
+                <td>6</td>
+                <td>5.5</td>
+            </tr>
+            <tr class="exatas-humanas">
+                <th colspan="4">Media de Exatas</th>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>Portugues</td>
+                <td>9</td>
+                <td>8</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Historia</td>
+                <td>7</td>
+                <td>6</td>
+                <td>6.5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="exatas-humanas">
+                <th colspan="4">Media de Humanas</th>
+                <td>7.5</td>
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
+
 </html>
