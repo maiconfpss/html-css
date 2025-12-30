@@ -42,4 +42,9 @@ Tbm tem esse colgroup
 porem se for tipo 100,200,300 fica emsuportavel fzer 200,300 classes pra cd ai o colgroup resolve com apenas 5 linha de comando mais omenos, E tbm se for muitos grupos da pra usar o colspan/span 2,4,6,8 o tanto de colunas que querer ou fazer mais um colgroup pular outros pra pintar apenas os que querer.
 
 
+.container {
+            overflow: auto;
+        } /* isso coloca barra lateral na tabela pra nao ficar a padrao que mexe o a tela toda*/
+
+
 https://youtu.be/muKp1-jcs3Q?si=kf4oYFDBITeaOACF   Guanabara explicando melhor sobre os scopes.
