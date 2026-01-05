@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+
+<body>
+
+    <h1>Segundo Formulario</h1>
+    <form action="#" method="post" autocomplete="on">
+        <p>
+            <label for="user">User</label>
+            <input name="user" id="user" type="text" required minlength="4" maxlength="15" size="10"
+                placeholder="Seu Nome" autocomplete="username">
+        </p>
+        <!-- 
+    Form = agrupa os campos e controla o envio
+
+    Action = pra onde os dados são enviados (PHP, JS, backend, etc)
+
+    Label = nome do campo, ligado ao input (clicar no texto foca a caixa)
+
+    Method:
+    GET  → envia pela URL
+    POST → envia no corpo da requisição (mais seguro, mas HTTPS ainda é necessário)
+    
+    Autocomplete = permite ou bloqueia sugestões do navegador
+
+    Required = obriga o usuario a preencher o campo pra poder enviar,
+    Minlength = quantidade minima de letras que pode digitar,
+    Maxlength = quantidade maxima de letras permitida.
+
+    Size = tamanho visual da caixa de texto nao define limite de caracteres 
+    so o tamanho da caixa porem atualmente se usa mais o css 
+    
+    Type="text" = campo de texto normal,
+    type="password" = campo de senha o que o usuario digita fica escondido
+
+    Name = nome do dado que vai ser enviado sem name o formulario ignora o campo
+
+    Id = identificador unico do campo serve pro label, css e javascript
+
+    For = usado no label liga o texto ao input pelo id
+
+    Autocomplete="username" = ajuda o navegador a sugerir nome de usuario E o "current-password" ajuda
+    sugerir senhas e tem mais comando...
+
+    
+    
+    -->
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required minlength="4" maxlength="15" size="8"
+                placeholder="Sua Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+            <!-- O type Submit é pra enviar o conteudo e o reset é pra limpar-->
+        </p>
+    </form>
+
+</body>
+
+</html>
