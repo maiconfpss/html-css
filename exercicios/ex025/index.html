@@ -12,18 +12,28 @@
 
     <h1>Meu Primeiro Formulario</h1>
     <div class="container">
-        <!-- A action cadastro.php é pra onde vai os dados inseridos nos campos-->
-        <form action="cadastro.php" autocomplete="on"> <!-- Auto complete dos campos podem ser desligados com esse comando no form-->
+        <!-- A action cadastro.php é pra onde vai os dados inseridos nos campos em resumo action
+         pra onde enviar os dados-->
+
+         <!-- Tem o method="get e post" o get é mais comun so envia 3000 dados tipo 3mil letras
+          e é mais rapido porem com a tecnologia de hoje em dia nao se tem diferenca 
+          e tbm ele mostra os dados na barra de pesquisa pode ser usado pra dados de boas tipo 
+          nomes pesos idades e tals. Ja o post ele oculta os dados na barra de pesquisa porem nao esta escondido
+          de verdade da pra ver pelo f12 pra melhor segurança tem que saber https, o post é recomendado 
+          pra dados sensiveis com  a ajuda do https pra maior segurança-->
+        <form action="cadastro.php" 
+        method="post"
+         autocomplete="on"> <!-- Auto complete dos campos podem ser desligados com esse comando no form-->
             <div class="campos">
                 <!-- Label é o melhor jeito e mais profissional sempre usar o label pra melhor site-->
                 <label for="nome">Nome</label>
-                <input id="nome" placeholder="Seu Nome">
+                <input name="nome" placeholder="Seu Nome">
 
                 <label for="sobrenome">Sobrenome</label>
-                <input id="sobrenome" placeholder="Seu Sobrenome">
+                <input name="sobrenome" placeholder="Seu Sobrenome">
 
                 <label for="email">Email</label>
-                <input id="email" placeholder="Seu Email">
+                <input name="email" placeholder="Seu Email">
             </div>
 
             <button type="submit" class="button">Enviar</button>
