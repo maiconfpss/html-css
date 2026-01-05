@@ -1,0 +1,52 @@
+* {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-family: fantasy;
+            font-size: 50px;
+            text-align: center;
+            color: #fff;
+            margin-top: 50px; /* ter espaçamento pra cima*/
+            margin-bottom: 50px; /* ter espaçamento pra baixo*/
+            text-shadow: 2px 2px 4px #000;
+            text-transform: uppercase; /* Esse comando serviu pra deixar as letras td maiusculas*/
+
+        }
+        body {
+            background-color: #232388;
+            color: #fff;
+        }
+        .container {
+            padding: 25px;
+        }
+        .container input {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 10px;
+            border: 2px solid rgba(23, 33, 53, 0.277);
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        .campos label {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 5px;
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .campos ::placeholder {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        .container button{
+            width: 80%;
+            padding: 20px;
+            margin: 50px;
+            border: 2px solid rgba(23, 33, 53, 0.277);
+            border-radius: 10px;
+            background-color: #fff;
+            font-size: 20px;
+        }

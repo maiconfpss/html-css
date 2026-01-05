@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Meu Primeiro Formulario</h1>
+    <div class="container">
+        <!-- A action cadastro.php é pra onde vai os dados inseridos nos campos-->
+        <form action="cadastro.php" autocomplete="on"> <!-- Auto complete dos campos podem ser desligados com esse comando no form-->
+            <div class="campos">
+                <!-- Label é o melhor jeito e mais profissional sempre usar o label pra melhor site-->
+                <label for="nome">Nome</label>
+                <input id="nome" placeholder="Seu Nome">
+
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" placeholder="Seu Sobrenome">
+
+                <label for="email">Email</label>
+                <input id="email" placeholder="Seu Email">
+            </div>
+
+            <button type="submit" class="button">Enviar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
