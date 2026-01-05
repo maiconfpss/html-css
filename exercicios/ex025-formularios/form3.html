@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+</head>
+
+<body>
+    <h1> Exemplo de Formulário</hl>
+        <form action="#" method="get" autocomplete="on">
+            <fieldset>
+                <!-- Esses dois comando me agrada pra dps brincar fieldset e legend-->
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="nome">Nome</label>
+                    <input 
+                    type="text" 
+                    name="nome" 
+                    id="nome" 
+                    minlength="5" 
+                    maxlength="20" 
+                    autocomplete="name" 
+                    placeholder="Nome" 
+                    required>
+                </p>
+                <p>
+                    <label for="email">E-mail</label>
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    autocomplete="email"
+                    placeholder="E-mail" 
+                    required>
+                </p>
+                <p>
+                    <label for="tel">Telefone</label>
+                    <input 
+                    type="tel"
+                    name="tel" 
+                    id="tel" 
+                    autocomplete="tel" 
+                    pattern="[0-9]{11}" 
+                    required
+                    placeholder="(xx)xxxx-xxxx">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+            <!-- Estudar mais sobre RegEx -->
+            </form>
+
+</body>
+
+</html>
