@@ -1,0 +1,2 @@
+antes no primeiro desafio de site eu tava com esse problema do hover ficar pulando isso acontecia pq a borda não fz parte do objeto
+pra arrumar isso vai no objeto e coloca box-sizing: border-nox;
