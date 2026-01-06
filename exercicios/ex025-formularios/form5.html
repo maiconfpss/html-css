@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 6</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on" enctype="multipart/form-data">
+        <!-- OBS aqui nesse codigo tem o comando file por causa dele é obrigatorio usar o
+         method POST pois o GET bate os 3k bits e fica incopativel, como o file é pra arquivos fica 
+         obrigatorio usar o POST-->
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+            <!-- Type de cor pra colocar um seletor de 65m de cores-->
+        </p>
+        <label for="inivel">Nivel de Satisfação: </label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        <!-- O range é uma barrinhas com uma bola que se move pra selecionar numeros 
+         tipo satisfacao 4 por exemplo de padrao vai de 0 a 100 ai pode limitar com min e max e tbm deixar 
+         um padrao pra iniciar ja nele com o value-->
+        </p>
+        <p>
+            <label for="file">Qualquer Arquivo / Now Multiplos Audios</label>
+            <input type="file" name="file" id="file" accept="audio/*" multiple>
+            <!-- Aqui o file serve pra tds arquivos porem pode limitar a tal arquivo como fiz aqui 
+             com audios e tbm coloquei pra escolher multiplos arquivos la no fim tem mais opções-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+<!-- 
+type="file" = envia qualquer tipo de arquivo
+accept = limita os tipos escolhidos
+multiple = permite varios arquivos
+multipart/form-data = necessario pra upload
+
+accept="audio/*"      → só audio
+accept="video/*"      → só video
+accept=".pdf"         → só pdf
+accept=".zip,.rar"    → zip e rar
+-->
+
+</html>
