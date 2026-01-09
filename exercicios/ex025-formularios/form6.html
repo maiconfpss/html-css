@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 7</title>
+</head>
+
+<body>
+
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+                <select name="estado" id="iest">
+                <option value=""selected>--- Escolha ---</option>
+                    <optgroup label="Região Sudeste">
+                        <!-- Os option sao os selecionaveis e optgroup saotipoos titulo nesse exemplo 
+                         regioes do sudeste pra colocar os estados que fazer parte do sudeste
+                         e o selected é pra ser oque ja vem selecionado e nao ficar como branco padrao sem 
+                         nada e o value aqui acho que é oque recebemos oque é enviado pro servidor-->
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão/option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                    </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <!-- Aqui é uma selecao com a opcao de escrever outras coisas porem podemos colocar opções pre
+             determinadas pra isso fazendo os option dentro da tag datalist com id e no input colocamos 
+             list os id do datalist pra conectar um ao outro -->
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg" Mensagem:>Mensagem</label><br>
+            <!-- Com esse taxtarea fazemos uma area pra mensagem tipo um quaradao ou oque modificamos-->
+                <textarea name="msg" id="imsg" cols="30" rows="10" 
+                placeholder="Sua mensagem...">
+</textarea>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+
+</body>
+
+</html>

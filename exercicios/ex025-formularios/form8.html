@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 9</title>
+</head>
+<body>
+
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadrastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="num">Numeros :</label>
+            <input type="range" name="num" id="num" min="1" max="10" value="5"
+            oninput="ivalue.innerHTML = Number(num.value)">
+            <output name="value" id="ivalue">5</output>
+            <!-- Outro range so que esse mostra o numero que esta selecionado e vai mudando-->
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+    </form>
+    
+</body>
+</html>

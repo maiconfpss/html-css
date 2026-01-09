@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* estilos pra tela*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Nosifer&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+    line-height: 1.5em;
+    /* espacamento entre linhas */
+}
+/* sem line height no impressora pra deixar alinhado a uma pagina*/
+header {
+  background-color: #232388;
+  color: #e1e6e1;
+  padding: 33px;
+  text-align: center;
+}
+h1 {
+  font-family: "Nosifer", sans-serif;
+  font-size: 33px;
+}
+nav {
+  background-color: #232388;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #e1e6e1;
+  padding: 10px;
+}
+body {
+  background: #e0e1de;
+}
+main {
+  padding: 33px;
+  min-width: 300px;
+  max-width: 555px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+main p {
+  padding: 10px;
+  font-family: "Cascadia Code", sans-serif;
+  font-size: normal;
+  font-weight: 200;
+
+  text-indent: 30px;
+  text-align: justify;
+}
+footer {
+  padding: 15px;
+  background-color: #232388;
+  color: #e1e6e1;
+}
+footer p {
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+.links-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
