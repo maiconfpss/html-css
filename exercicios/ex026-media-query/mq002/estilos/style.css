@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Configurações Gerais */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* cover = cobre o buraco custe o que custar
+       contain = cabe tudo nem que sobre espaço */
+
+}
+h1 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 0px #121f81;
+
+}
