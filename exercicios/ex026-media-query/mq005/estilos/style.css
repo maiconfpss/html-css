@@ -5,6 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#menu-burgue::before {
+  font-family: 'Material Symbols Outlined';
+  content: 'menu';
+  font-size: 32px;
+}
+
 h1 {
     text-align: center;
     font-size: 3em;
