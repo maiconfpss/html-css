@@ -23,10 +23,15 @@ h1 {
     display: block;
     text-align: center;
     font-size: 2rem;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    padding: 6px;
+    
 }
 
 #menu-burgue:hover {
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.08);
     cursor: pointer;
 }
 
@@ -55,7 +60,14 @@ nav ul li a:hover {
     color: #000;
 }
 
+nav {
+    display: none;
 
+}
+
+nav.active {
+    display: block;
+}
 
 header nav ul {
     list-style: none;
@@ -66,6 +78,40 @@ header a {
     text-decoration: none;
     color: #fff;
 
+}
+
+/* layout para telas maiores */
+@media (min-width: 700px) {
+    #menu-burgue {
+        display: none;
+    }
+
+    header {
+        display: block;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    nav ul li {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 10px 14px;
+        color: #fff;
+    }
 }
 
 html, body {

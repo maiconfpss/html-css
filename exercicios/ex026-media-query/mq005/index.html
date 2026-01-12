@@ -14,8 +14,9 @@
 
     <header>
         <h1>Menu Responsive</h1>
-        <span id="menu-burgue" class="icon-menu"></span>
-        <nav>
+        <button id="menu-burgue" class="icon-menu" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">
+        </button>
+        <nav id="main-nav">
             <ul>
                 <li><a href="#">Responsive 1</a></li>
                 <li><a href="#">Responsive 2</a></li>
@@ -48,6 +49,27 @@
             </p>
         </article>
     </main>
+
+    <script>
+        const btnMenu = document.getElementById('menu-burgue');
+        const nav = document.getElementById('main-nav');
+
+        function clickMenu() {
+            const expanded = btnMenu.getAttribute('aria-expanded') === 'true';
+            btnMenu.setAttribute('aria-expanded', String(!expanded));
+            nav.classList.toggle('active');
+        }
+
+        btnMenu.addEventListener('click', clickMenu);
+
+        // fechar menu ao clicar em link (UX)
+        document.querySelectorAll('#main-nav a').forEach(a => {
+            a.addEventListener('click', () => {
+                nav.classList.remove('active');
+                btnMenu.setAttribute('aria-expanded', 'false');
+            })
+        });
+    </script>
 
 </body>
 
